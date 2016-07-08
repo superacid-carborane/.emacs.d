@@ -4,3 +4,6 @@
 (global-set-key "\C-ca" 'org-agenda)
 
 (setq org-log-done 'time)
+
+;; Load ODT backend to allow for exporting to open document format.
+(require 'ox-odt)
