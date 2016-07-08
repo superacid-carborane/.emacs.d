@@ -1,5 +1,11 @@
 #+TITLE: Lev's Emacs Config 
 
+#+BEGIN_QUOTE
+Personally, I feel inspired whenever I open Emacs. Like a craftsman entering his workshop, I feel a realm of possibility open before me. I feel the comfort of an environment that has evolved over time to fit me perfectly – an assortment of packages and keybindings which help me bring ideas to life day after day.
+
+-- Daniel Higginbotham, Clojure for the Brave and True
+#+END_QUOTE
+
 * About this Repo
 This repo contains my [[https://www.gnu.org/software/emacs/][emacs]] configuration files. I try to keep things simple and logically organized. Emacs is so customizable that I think that the best thing to do is to use repos like this for inspiration but ultimately your own configuration will depend on what you are doing. If you are new to emacs, rather than finding some random .emacs.d on the internet, I would suggest using "stock" emacs and then figuring out what you hate about it and then start your own .emacs.d repo to fix the things that you hate. 
 
