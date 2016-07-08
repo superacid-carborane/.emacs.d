@@ -1,0 +1,72 @@
+			  ━━━━━━━━━━━━━━━━━━━━
+			   LEV'S EMACS CONFIG
+
+
+			     Lev Lazinskiy
+			  ━━━━━━━━━━━━━━━━━━━━
+
+
+Table of Contents
+─────────────────
+
+1 About this Repo
+2 init.el
+.. 2.1 Packages
+.. 2.2 Customizations
+
+
+
+
+
+1 About this Repo
+═════════════════
+
+  This repo contains my [emacs] configuration files. I try to keep
+  things simple and logically organized. Emacs is so customizable that I
+  think that the best thing to do is to use repos like this for
+  inspiration but ultimately your own configuration will depend on what
+  you are doing. If you are new to emacs, rather than finding some
+  random .emacs.d on the internet, I would suggest using "stock" emacs
+  and then figuring out what you hate about it and then start your own
+  .emacs.d repo to fix the things that you hate.
+
+  Most of the structure of this configuration is +stole-from+ inspired
+  by the [emacs config] from the wonderful book [Clojure for the Brave
+  and True].
+
+  Everything in this repo is licensed under a [CC0 1.0 Universal]
+  license, do whatever you want. :)
+
+
+  [emacs] https://www.gnu.org/software/emacs/
+
+  [emacs config] https://github.com/flyingmachine/emacs-for-clojure
+
+  [Clojure for the Brave and True] http://www.braveclojure.com/
+
+  [CC0 1.0 Universal] https://creativecommons.org/publicdomain/zero/1.0/
+
+
+2 init.el
+═════════
+
+  All the magic happens here. This is the file that is read when emacs
+  first starts. There are two main sections.
+
+
+2.1 Packages
+────────────
+
+  This is where we define which package repositiories we want to use for
+  plugins. I prefer [mepla]. There is also a section for loading any
+  arbitrary `.el' file from the `/vendor' fodler.
+
+
+  [mepla] https://melpa.org
+
+
+2.2 Customizations
+──────────────────
+
+  All customizations are located in the `/customizations' folder. I try
+  to split things up in a logical fashion.
