@@ -58,8 +58,9 @@
 (load "setup-org.el")
 (load "setup-c.el")
 
-;; Mail
+;; Package Specific Customizations
 (load "setup-mu4e.el")
+(load "setup-magit.el")
 
  ;; Terminal buffer configuration.
  (add-hook 'term-mode-hook 'my-term-mode-hook)
