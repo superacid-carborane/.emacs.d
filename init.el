@@ -43,6 +43,7 @@
 (load "shell-integration.el")
 
 ;; Navigation
+(load "navigation.el")
 
 ;; User Interface 
 (load "ui.el")
@@ -56,12 +57,25 @@
 ;; Language-specific
 (load "setup-org.el")
 (load "setup-c.el")
+
+;; Mail
+(load "setup-mu4e.el")
+
+ ;; Terminal buffer configuration.
+ (add-hook 'term-mode-hook 'my-term-mode-hook)
+ (defun my-term-mode-hook ()
+   ;; https://debbugs.gnu.org/cgi/bugreport.cgi?bug=20611
+   (setq bidi-paragraph-direction 'left-to-right))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files (quote ("~/org/circle.org" "~/org/docs.org"))))
+ '(org-agenda-files
+   (quote
+    ("~/org/rob.org" "~/org/eric.org" "~/org/csm.org" "~/org/circle.org" "~/org/docs.org")))
+ '(send-mail-function (quote smtpmail-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -2,3 +2,4 @@ auto-save-list
 elpa
 *~
 url
+customizations/setup-mu4e.el
